@@ -1,6 +1,8 @@
 # Jogo-da-velha---lab-ICC1
 Trabalho de laboratório de Introdução de Ciência da Computação  1 - Jogo da Velha 
+
 Professor da disciplina: Jó Ueyama
+
 Aluno : Renan Correia Monteiro Soares - num.USP: 14605661
 
 
