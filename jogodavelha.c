@@ -176,10 +176,10 @@ int main(){
 
     //finalização do programa
     if(vencedor == 'v'){
-        printf("\nO JOGO ACABOU\nDEU VELHA\n");
+        printf("O JOGO ACABOU\nDEU VELHA\n");
     }
     else{
-        printf("\nO JOGO ACABOU\nO JOGADOR \"%c\" VENCEU\n", vencedor);
+        printf("O JOGO ACABOU\nO JOGADOR \"%c\" VENCEU\n", vencedor);
     }
 
     mostra_velha();
