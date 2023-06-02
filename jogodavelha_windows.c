@@ -164,13 +164,13 @@ int main(){
             printf("\n");
           }
           else{
-              printf("ENTRADA INVÁLIDA, TENTE NOVAMENTE\n\n");
+              printf("ENTRADA INVALIDA, TENTE NOVAMENTE\n\n");
               continue;
           }
         }
 
         else{
-            printf("ENTRADA INVÁLIDA, TENTE NOVAMENTE\n");
+            printf("ENTRADA INVALIDA, TENTE NOVAMENTE\n");
             continue;
         }
 
