@@ -18,6 +18,7 @@ void mostra_velha(){
     for(int i=0; i<3; i++){
         printf("%c | %c | %c\n", tab[i][0], tab[i][1], tab[i][2]);
     }
+    printf("\n");
 }
 
 
@@ -148,9 +149,13 @@ int main(){
 
         /*primeiro se verifica a posição, pois assim a variavel entrada_anterior
         não será modificada indevidamente*/
+
+        system("cls");
+
         if(verifica_posicao(posicao_linha-1, posicao_coluna-1)){
           if(verifica_jogador(jogador)){
             tab[posicao_linha-1][posicao_coluna-1] = jogador;
+            printf("\n");
           }
           else{
               printf("ENTRADA INVÁLIDA, TENTE NOVAMENTE\n\n");
@@ -159,7 +164,7 @@ int main(){
         }
 
         else{
-            printf("ENTRADA INVÁLIDA, TENTE NOVAMENTE\n\n");
+            printf("ENTRADA INVÁLIDA, TENTE NOVAMENTE\n");
             continue;
         }
 
@@ -174,7 +179,7 @@ int main(){
         printf("\nO JOGO ACABOU\nDEU VELHA\n");
     }
     else{
-        printf("\nO JOGO ACABOU\nO %c VENCEU\n", vencedor);
+        printf("\nO JOGO ACABOU\nO JOGADOR \"%c\" VENCEU\n", vencedor);
     }
 
     mostra_velha();
