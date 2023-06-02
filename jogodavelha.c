@@ -1,3 +1,8 @@
+//jogodavelha.c
+//Trabalho I da matéria de ICC 1 - professor Jó Ueyama
+//feito pelo aluno Renan Correia Monteiro Soares - 14605661
+//data de entrega do trabalho: 02/06/2023
+
 #include <stdlib.h>
 #include <stdio.h>
 #include <stdbool.h>
@@ -15,8 +20,9 @@ void mostra_velha(){
       -mostra o tabuleiro do jogo
     --------------------------------------------------------------------------*/
     printf("\n");
+    printf("   1   2   3\n");
     for(int i=0; i<3; i++){
-        printf("%c | %c | %c\n", tab[i][0], tab[i][1], tab[i][2]);
+        printf("%d  %c | %c | %c\n", i+1, tab[i][0], tab[i][1], tab[i][2]);
     }
     printf("\n");
 }
@@ -143,14 +149,14 @@ int main(){
         scanf("%d", &posicao_coluna);
         setbuf(stdin, NULL);
 
+        system("cls");
+
         /*verifica se o jogador e as posições colocadas são válidas.
         Se não, printará uma mensagem e pulará uma iteração, voltando ao inicio
         do while.*/
 
         /*primeiro se verifica a posição, pois assim a variavel entrada_anterior
         não será modificada indevidamente*/
-
-        system("cls");
 
         if(verifica_posicao(posicao_linha-1, posicao_coluna-1)){
           if(verifica_jogador(jogador)){
